@@ -1,4 +1,4 @@
-let a=2;
+var a=2;
 function numero(a) {
     if(a%2==0){
         console.log("Es par");
@@ -6,3 +6,4 @@ function numero(a) {
         console.log("Es impar");
     }
 }
+console.log(numero(a));
