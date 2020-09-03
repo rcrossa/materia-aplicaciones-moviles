@@ -1,5 +1,5 @@
-let nombre;
-let edad;
+// const nombre;
+// const edad;
 
 let Persona = class {
     constructor (nombre, edad) {
