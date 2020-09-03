@@ -1,5 +1,5 @@
-// let nombre;
-// var edad;
+let nombre;
+let edad;
 
 let Persona = class {
     constructor (nombre, edad) {
