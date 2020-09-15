@@ -3,26 +3,28 @@ class Persona  {
       this.nombre = nombre;
       this.edad = edad;
     }
-
-
 }
-
+var profe = 'carlitos';
 class Estudiante extends Persona{
-    constructor(nombre,edad,materia1){
+     
+    constructor(nombre,edad){
        super(nombre,edad);
-       this.materia=materia1;
     }
-    get estudia(){
-        return this.profesor();
+    estudiando(){
+        return  "Estudiando con: " + setprofesor();
     }
-    profesor(){
-        return 'Nombre: ' + this.nombre + '\nEdad: ' + this.edad + '\nMateria: ' + this.materia;
+    setprofesor(){
+        return  profe;
     }
 
     
 }
-var a = new Estudiante('Carlos',30,'historia');
-console.log(a.estudia);
-// const estudiante1 = new Estudiante('Carlos',30,'carlitos');
+var a = new Estudiante();
+a.nombre='Carlos';
+a.edad =38;
+a.estudiando='Raul';
 
-// console.log(estudiante1.estudia);
+console.log(a);
+
+// a.nombre('Roberto');
+// console.log(a);
