@@ -1,24 +1,27 @@
-class Persona  {
+export default class Persona  {
     constructor (nombre, edad) {
       this.nombre = nombre;
       this.edad = edad;
+      
     }
 }
+
 var profe = 'carlitos';
-class Estudiante extends Persona{
+export default class Estudiante extends Persona{
      
     constructor(nombre,edad){
        super(nombre,edad);
     }
     estudiando(){
-        return  "Estudiando con: " + setprofesor();
+        return   + setprofesor();
     }
-    setprofesor(){
-        return  profe;
+    setprofesor(profe){
+        return "Estudiando con: " + profe;
     }
 
     
 }
+
 var a = new Estudiante();
 a.nombre='Carlos';
 a.edad =38;
