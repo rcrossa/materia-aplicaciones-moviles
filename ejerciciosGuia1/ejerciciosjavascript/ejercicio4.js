@@ -6,5 +6,5 @@ let a =0;
 //      console.log(num %2==0);
 //     }
 //  })
-let par = numeros.map( num =>{if(num%2==0){ a++;console.log(num %2==0);} });
+let par = numeros.filter( num =>{if(num%2==0){ a++;console.log(num %2==0);} });
 console.log("Hay " + a +" numeros pares.");
