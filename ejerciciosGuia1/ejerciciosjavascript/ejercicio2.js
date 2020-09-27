@@ -9,9 +9,9 @@ let meses = ['Enero',
 'Septiembre',
 'Octubre',
 'Noviembre',
-'Diciembre',
+'Diciembre'
   ]
-console.log(meses);
+meses.forEach(element => console.log(element));
 // meses.forEach(function(elemento,indice, meses) {
 // console.log(meses);
 // }) 
