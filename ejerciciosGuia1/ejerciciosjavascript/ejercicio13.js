@@ -16,14 +16,17 @@ class Estudiante extends Persona{
   setprofesor(profe){
       return + profe;
   }
-
-  
 }
 
+
+
+// ---------------------------------
 var estudiantes = ["pepe", "juan", "carlos"];
 class Profesor extends Persona {
-  constructor(nombre,edad) {
+  
+  constructor(nombre,edad,estudiante) {
    super(nombre,edad);
+   this.estudiante=estudiante;
   }
   enseñando() {
     return  estudiante;
@@ -31,14 +34,14 @@ class Profesor extends Persona {
   addEstudiante() {
     estudiante.push();
   }
+  
 }
 
 var estudiante1 = new Estudiante("Alex",15);
 console.log(estudiante1);
-
+estudiantes.push('ramon');
 
 const profesor1 = new Profesor('Roberto',40);
-estudiantes.push('ramon');
 console.log(profesor1 + "\nEs profesor de: " + estudiantes);
 
 // console.log(estudiantes);
