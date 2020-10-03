@@ -1,16 +1,22 @@
 const quienesAprobaron = [[8,6,2,4],[7,9,4,5],[6,2,4,2],[9,6,7,10]];
 
-  // const quienesAprobaron = notas.map(Element =>  );
-  quienesAprobaron.forEach(element => {
+var condicionDeaprobacion = (notas) => notas >= 4 ;
+
+
+for (const x of quienesAprobaron) {
+}
+
+var aprobaron;
+function a (quienesAprobaron) {
+  var alumnosAprobados;
+  alumnosAprobados = quienesAprobaron.filter((alumno)=> alumno.every(condicionDeaprobacion));
+  return alumnosAprobados;
+}
+
+aprobaron = a(quienesAprobaron);
+
+
+for (const iterator of aprobaron) {
   
-      console.log(element > 4);
-   
-  });
-  // console.log(quienesAprobaron);
-  //   let nota =  [8,6,2,4,];
-// console.log(notas);
-// var aprobaron = notas.map(function(element){
-//     if(element > 4){
-//     return console.log(element);
-// }
-// })
+  console.log(iterator);
+}

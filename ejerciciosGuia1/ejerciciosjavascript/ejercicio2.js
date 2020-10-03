@@ -11,7 +11,9 @@ let meses = ['Enero',
 'Noviembre',
 'Diciembre'
   ]
-meses.forEach(element => console.log(element));
+for (let i of meses) {
+  console.log(i);
+}
 // meses.forEach(function(elemento,indice, meses) {
 // console.log(meses);
 // }) 

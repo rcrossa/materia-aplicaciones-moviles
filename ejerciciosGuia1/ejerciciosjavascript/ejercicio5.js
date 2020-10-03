@@ -1,16 +1,13 @@
-// const a =  (valoractual) => valoractual > 5;
-
-let notas = [8,6,2,4];
+let notas = [8,6,6,5];
 // notas.forEach(Element => Element > 4({ 
 //     notas = notas.map
 // }));
-var aprobaron = notas.filter(function(element){
+// var aprobaron = notas.every(function(element){
     
-    return console.log(element > 4);
-})
+//     return console.log(element > 4);
+// })
 
-// var a = notas.every(notas => notas.nota > 4);
 
-// console.log(notas.every(a));
-
+const aprobaron = (Element) => Element > 4;
+console.log(notas.every(aprobaron));
 
