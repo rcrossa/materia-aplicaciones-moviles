@@ -8,6 +8,7 @@ function detalle1(detalle){
     // console.log(nombre);
     return console.log(detalle);
 }
+
 // nombrePokemon= null;
 // Fin codigo
 
@@ -15,5 +16,5 @@ function detalle1(detalle){
 // - nombrePokemon es un string con el nombre del pokemon
 // - funcionCallback es una función que recibe el objeto con los datos del pokemon extraido
 
-obtenerPokemon(nombrePokemon,detalle1);
+obtenerPokemon(nombrePokemon);
 
