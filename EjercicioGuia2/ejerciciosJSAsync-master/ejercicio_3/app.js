@@ -3,6 +3,7 @@ const obtenerPokemon = require("./library");
 
 // Codigo funcion callback
 
+c
 
 
 // Fin codigo
