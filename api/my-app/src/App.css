@@ -25,26 +25,26 @@
 }
 .App-header .mostrar{
   background-color: blanchedalmond;
-  width: 400px;
+  width: auto;
   height: 350px;
 }
 .App-header .mostrar:hover{
-  background-color: coral;
+  background-color:  coral;
 }
 .dato1{
-  width: 240px;
-  height: 70px;
+  width: auto;
+  height: 80px;
   background-color: red;
   font-weight: bold;
   position: relative;
   animation: mymove 8s infinite;
   animation-direction: alternate;
 }
-.dato1:hover{
-  background-color: magenta;
+.dato1 .dato2 .dato3 .dato4:hover{
+  background-color:green;
 }
 .dato2{
-  width: 240px;
+  width: auto;
   height:50px;
   background-color: red;
   position: relative;
@@ -53,7 +53,7 @@
   animation-direction: alternate-reverse;
 }
 .dato3{
-  width: 240px;
+  width: auto;
   height:50px;
   background-color: red;
   position: relative;
@@ -61,7 +61,7 @@
   animation-direction: alternate;
 }
 .dato4{
-  width: 240px;
+  width: auto;
   height:50px;
   background-color: red;
   position: relative;
