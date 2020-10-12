@@ -23,6 +23,91 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-header .mostrar{
+  background-color: blanchedalmond;
+}
+.App-header .mostrar:hover{
+  background-color: coral;
+}
+.dato1{
+  width: auto;
+  height:70px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.dato2{
+  width: auto;
+  height:50px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+ 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.dato3{
+  width: auto;
+  height:50px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.dato4{
+  width: auto;
+  height:50px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes example {
+  0%   {background-color:darkseagreen; left:0px; top:0px;}
+  25%  {background-color:darkcyan; left:0px; top:0px;}
+  50%  {background-color:darkorange; left:0px; top:0px;}
+  75%  {background-color:darksalmon; left:0px; top:0px;}
+  100% {background-color:darkturquoise; left:0px; top:0px;}
+}
+
+.titulo1{
+  width: auto;
+  height:70px;
+  margin-bottom: -10px;
+  background-color: blue;
+  position: relative;
+  animation-name: titulo;
+  animation-duration: 4s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.titulo2{
+  width: auto;
+  height:auto;;
+  background-color: blue;
+  position: relative;
+  animation-name: titulo;
+  animation-duration: 4s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes titulo {
+  0%   {background-color:lightskyblue; left:0px; top:0px;}
+  25%  {background-color:lightpink; left:0px; top:0px;}
+  50%  {background-color:lightsalmon; left:0px; top:0px;}
+  75%  {background-color:lightskyblue; left:0px; top:0px;}
+  100% {background-color:lightpink; left:0px; top:0px;}
+}
 
 .App-link {
   color: #61dafb;

@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-
+import '../App.css';
 class Mostrar extends React.Component{
     constructor(props){
         super(props)
@@ -24,10 +24,10 @@ class Mostrar extends React.Component{
         const dato4=this.state.detalle.timezones
      
         return <div>
-            <h1>{dato1}</h1>
-            <h2>{dato2}</h2>
-            <h3>{dato3}</h3>
-            <h4>{dato4}</h4>
+            <h1 className="dato1">{dato1}</h1>
+            <h2 className="dato2">{dato2}</h2>
+            <h3 className="dato3">{dato3}</h3>
+            <h4 className="dato4">{dato4}</h4>
         </div>
         }
     }
