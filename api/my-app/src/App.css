@@ -25,58 +25,53 @@
 }
 .App-header .mostrar{
   background-color: blanchedalmond;
+  width: 400px;
+  height: 350px;
 }
 .App-header .mostrar:hover{
   background-color: coral;
 }
 .dato1{
-  width: auto;
-  height:70px;
+  width: 240px;
+  height: 70px;
   background-color: red;
+  font-weight: bold;
   position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: mymove 8s infinite;
+  animation-direction: alternate;
+}
+.dato1:hover{
+  background-color: magenta;
 }
 .dato2{
-  width: auto;
+  width: 240px;
   height:50px;
   background-color: red;
   position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-duration: 0s infinite;
+  animation: mymove 5s infinite;
+  animation-direction: alternate-reverse;
 }
 .dato3{
-  width: auto;
+  width: 240px;
   height:50px;
   background-color: red;
   position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: mymove 5s infinite;
+  animation-direction: alternate;
 }
 .dato4{
-  width: auto;
+  width: 240px;
   height:50px;
   background-color: red;
   position: relative;
-  animation-name: example;
-  animation-duration: 4s;  
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: mymove 5s infinite;
+  animation-direction: alternate-reverse;
 }
-@keyframes example {
-  0%   {background-color:darkseagreen; left:0px; top:0px;}
-  25%  {background-color:darkcyan; left:0px; top:0px;}
-  50%  {background-color:darkorange; left:0px; top:0px;}
-  75%  {background-color:darksalmon; left:0px; top:0px;}
-  100% {background-color:darkturquoise; left:0px; top:0px;}
+
+@keyframes mymove {
+  from {background-color:darkseagreen; left: 0px;}
+  to {background-color:darkorange;left: 50px;}
 }
 
 .titulo1{
