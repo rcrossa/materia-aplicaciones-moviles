@@ -5,16 +5,8 @@ const obtenerChiste = require("./library");
 obtenerChiste();
 
 obtenerChiste().then(function(primerElemento){
-    return console.log(primerElemento[0].type);
-}).then(function(segundoElemento){
-    return segundoElemento[0].setup;
+    return console.log(primerElemento[0].type + " - "
+     + primerElemento[0].setup + " - " + primerElemento[0].punchline);
 }).catch(function(err){
     console.error("Hay un error" + err);
 });
-// console.log("--------------------------------------------------");
-
-// obtenerChiste()
-// .then((primerElemento)=>console.log(primerElemento[0].id))
-// .then((segundoElemento)=>console.log(segundoElemento[0].type))
-// .then((tercerElemento)=>console.log(tercerElemento[0].setup))
-// .catch((e)=> console.log("Hay un problema"+ e));

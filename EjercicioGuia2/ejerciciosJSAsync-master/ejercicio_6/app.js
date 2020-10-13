@@ -6,9 +6,16 @@ const obtenerPersonaFake = require("./library");
 
 obtenerPersonaFake().then(function(detalle){
     dato1=detalle.results[0];
-    return console.log(dato1.gender);
-}).then(function(datos1){
-    return console.log(dato1.name);
-}).catch(function(err){
-    return console.log(err);
+     console.log("\nGenero: " + dato1.gender);
+     console.log("\nNombre: " + dato1.name.first + "\nApellido: " + dato1.name.last);
+      console.log("\nPais: " + dato1.location.country 
+    + "\nEstado:" + dato1.location.state 
+    + "\nCiudad: " + dato1.location.city
+    +"\nCalle: " + dato1.location.street
+    +"\nNro: " + dato1.location.street.number
+    +"\nCódigo Postal: " + dato1.location.postcode);
+    console.log("\nEmail: "+ dato1.email);
+    console.log("\nUsuario: " + dato1.login.username + "\nClave: " + dato1.login.password);
 });
+
+   
