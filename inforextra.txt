@@ -1,3 +1,5 @@
 https://nativebase.io/
 https://docs.nativebase.io/Components.html#floating-label-headref
 https://docs.nativebase.io/Components.html#accordion-custom-header-content-headref
+https://platzi.com/blog/react-native-app-store/
+http://blog.fixter.org/creando-un-app-hibrida-con-reactnative/
