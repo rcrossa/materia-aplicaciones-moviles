@@ -6,6 +6,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import {Nav,Navbar,NavLink} from 'react-bootstrap';
+
 class Menu extends React.Component{
     
         
@@ -15,25 +17,32 @@ class Menu extends React.Component{
 
       function Home() {
         return (
-          <div>
-            <h2>Home</h2>
-          </div>
+          <Navbar bg="light" variant="light">
+            <Nav className="mr-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+           </Nav>
+        </Navbar>
         );
       }
       
       function About() {
-        return (
-          <div>
-            <h2>About</h2>
-          </div>
+        return (          
+            <Navbar bg="light" variant="light">
+              <Nav className="mr-auto">
+              <Nav.Link href="#home">About</Nav.Link>
+               </Nav>
+            </Navbar>
+          
         );
       }
       
       function Dashboard() {
         return (
-          <div>
-            <h2>Dashboard</h2>
-          </div>
+          <Navbar bg="light" variant="light">
+            <Nav className="mr-auto">
+               <Nav.Link href="#home">Dashboard</Nav.Link>
+            </Nav>
+        </Navbar>
         );
       }
       
@@ -62,7 +71,7 @@ class Menu extends React.Component{
               you have multiple routes, but you want only one
               of them to render at a time
             */}
-            <Switch>
+            
               <Route exact path="/">
                 <Home />
               </Route>
@@ -72,7 +81,6 @@ class Menu extends React.Component{
               <Route path="/dashboard">
                 <Dashboard />
               </Route>
-            </Switch>
           </div>
         </Router>
       );
