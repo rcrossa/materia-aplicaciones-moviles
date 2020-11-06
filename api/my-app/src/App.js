@@ -16,7 +16,7 @@ function App() {
         <Mostrar/></div>
       </header>
       <body>
-        {/* <MostrarApi/> */}
+        <MostrarApi/>
       </body>
     </div>
     
