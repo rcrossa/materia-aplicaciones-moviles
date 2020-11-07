@@ -7,17 +7,25 @@ class MostrarApi extends React.Component {
     this.state = {
       value: 'Please write an essay about your favorite DOM element.',
       name: "",
+      url:'https://restcountries.eu/rest/v2/',
       detalle: [],
-      palabra:""
+      numero:'1',
+      loading: false
     };
   }
     
   componentDidMount(){
-    fetch('https://restcountries.eu/rest/v2/')
-    .then(response => response.json())
-    .then(detalleJson => this.setState({detalle: detalleJson[0]}))
+    this.getDetalle();
 }
 
+getDetalle =  (numero) => {
+  this.setState({loading:true})
+  fetch(this.state.url)
+  .then(response => response.json())
+  .then(detalleJson =>this.setState({detalle: detalleJson[this.state.numero]}))
+  .catch(console.log('algo salio mal'));
+
+}
 
   handleChange = event => {
     const value = event.target.value;
@@ -38,8 +46,8 @@ class MostrarApi extends React.Component {
   }
  
   render() {
-
-      
+    
+  const date = this.state.detalle.name;
     return (
       <React.Fragment>
         { /* handleReverse() is called when the form is submitted */ }
@@ -63,9 +71,7 @@ class MostrarApi extends React.Component {
         </form>
         { /* Render reversed text */}
         <p>Reversed Text: {this.state.reversedText}</p>
-    
-
-    <p>{}</p>
+        <p>Reversed Text: {date}</p>
 
       </React.Fragment>
     );
