@@ -16,7 +16,7 @@ function App() {
         <Mostrar/></div>
       </header>
       <body>
-        <MostrarApi/>
+        <MostrarApi prueba="Mensaje de prueba"/>
       </body>
     </div>
     
