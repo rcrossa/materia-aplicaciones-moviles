@@ -22,7 +22,7 @@ export default class App extends Component {
         {!user ? (
             <Stack.Screen name="Login" component={Login} options={{title:"Login"}}/>
              
-          ) : user > 1 (
+          ) :  (
             <>
               <Stack.Screen name="Home" component={HomeScreen} options={{title:"Inicio"}}/>
               <Stack.Screen name="Details" component={DetailsScreen} options={{title:"Detalles"}}/>

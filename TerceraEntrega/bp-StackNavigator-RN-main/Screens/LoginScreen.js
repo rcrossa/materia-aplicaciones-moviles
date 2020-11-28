@@ -11,10 +11,6 @@ const firebaseApp =  firebase.initializeApp(firebaseConfig);
 
 class Login extends Component{
     
-
-    handlerBtn(){
-        this.props.navigation.navigate('Home');
-    }
     render(){
         
         const { user, signOut, signInWithGoogle} = this.props;
@@ -26,8 +22,7 @@ class Login extends Component{
                     <Text>Please, Sign in</Text>
                 }
                 {
-                    user ? <Button onPress={signOut} title='Sign Out' /> 
-                    : <Button onPress={signInWithGoogle} title='Sign in With Google' />
+                    <Button onPress={signInWithGoogle} title='Sign in With Google' />
                 }
             </View>
         )
