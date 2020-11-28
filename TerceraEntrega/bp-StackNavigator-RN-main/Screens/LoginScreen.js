@@ -18,7 +18,7 @@ class Login extends Component{
         return (
             <View>
                 { user ? <Text>
-                    Hello,  { user.displayName}</Text>: 
+                    Hola,  { user.displayName}</Text>: 
                     <Text>Please, Sign in</Text>
                 }
                 {

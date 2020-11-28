@@ -6,8 +6,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import {HomeScreen} from "./Screens/HomeScreen";
 import {DetailsScreen} from "./Screens/DetailsScreen";
 import Login from "./Screens/LoginScreen";
-import {firebaseConfig} from './Screens/firebase';
-import withFirebaseAuth from 'react-with-firebase-auth';
 const Stack = createStackNavigator();
 
 
