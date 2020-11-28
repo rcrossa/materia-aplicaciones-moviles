@@ -10,10 +10,13 @@ const firebaseApp =  firebase.initializeApp(firebaseConfig);
 
 
 class Login extends Component{
-    
+    logUser = async () => {
+        await this.props.signInWithGoogle();
+        this.props.route.params.onLoginSuccess();
+    }
     render(){
         
-        const { user, signOut, signInWithGoogle} = this.props;
+        const { user, signOut, signInWithGoogle,route} = this.props;
         return (
             <View>
                 { user ? <Text>
@@ -21,7 +24,10 @@ class Login extends Component{
                     <Text>Please, Sign in</Text>
                 }
                 {
-                    <Button onPress={signInWithGoogle} title='Sign in With Google' />
+                    <>
+                    <Button onPress={signOut} title='Logout' />
+                    <Button onPress={this.logUser} title='Sign in With Google' />
+                    </>
                 }
             </View>
         )

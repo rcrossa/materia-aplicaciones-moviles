@@ -10,15 +10,20 @@ const Stack = createStackNavigator();
 
 
 export default class App extends Component {
-
+  constructor(props){
+    super(props);
+    this.state={
+      logged:false
+    }
+  }
 
   render(){
-    const { user} = this.props;
+    const { logged} = this.state;
     return (
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Login">
-        {!user ? (
-            <Stack.Screen name="Login" component={Login} options={{title:"Login"}}/>
+        {!logged ? (
+            <Stack.Screen name="Login" component={Login}  initialParams={{ onLoginSuccess:() =>this.setState({logged:true})  }} options={{title:"Login"}}/>
              
           ) :  (
             <>
