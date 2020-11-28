@@ -14,7 +14,6 @@ class Login extends Component{
     render(){
         
         const { user, signOut, signInWithGoogle} = this.props;
-        const {HomeScreen} = this.props;
         return (
             <View>
                 { user ? <Text>
